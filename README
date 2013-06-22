@@ -1,0 +1,27 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=4629
+
+Adds integration with Laravel 4 Generator bundle through LG command allowing user to generate various entities w/o leaving VIM. Convinient navigation through generated/updated files included. This is a very early release, please file bugs if you find any.
+
+GitHub repo: https://github.com/naquad/lgs.vim
+
+LGS.vim provides one single command for invoking generators: LG
+
+Examples:
+
+\\\" Generates NewModel
+LG model NewModel
+
+\\\" Generates controller Controller
+LG controller MyController
+
+\\\" Will insert form for model Model into current buffer at cursor position
+LG form NewModel
+
+\\\" You can also specify options for generators
+
+LG form --method=create --html=ul ModelName
+
+\\\" Syntax with = is supported too
+LG controller --path=/path/to/template ControllerName
+
+See documentation for more details.
